@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catatan & Cuaca - Futuristik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Tambahkan icon futuristik -->
+  <link rel="icon" href="https://img.icons8.com/ios/50/ffffff/robot.png"/>
+</head>
+<body>
+  <div class="container">
+    <!-- Header dengan logo atau judul aplikasi -->
+    <header class="header">
+      <h1>Catatan & Cuaca</h1>
+      <p class="subheading">Catat harianmu dan cek cuaca sekitarmu, dalam desain futuristik!</p>
+    </header>
+
+    <!-- Bagian Catatan Harian -->
+    <section class="catatan">
+      <h2>📝 Catatan Harian</h2>
+      <textarea id="noteInput" placeholder="Tulis catatanmu di sini..." rows="4"></textarea>
+      <button id="btnSimpan">Simpan Catatan</button>
+
+      <div id="daftarCatatan"></div>
+    </section>
+
+    <!-- Bagian Cuaca -->
+    <section class="cuaca">
+      <h2>🌦️ Ramalan Cuaca</h2>
+      <input type="text" id="kotaInput" placeholder="Masukkan nama kota..." />
+      <button id="btnCuaca">Tampilkan Cuaca</button>
+
+      <div id="cuaca"></div>
+    </section>
+
+    <footer class="footer">
+      <p>&copy; 2025 Catatan & Cuaca - Desain kombez kontrakan 🏠</p>
+      <p>Created with  Muhammad hakiki</p>
+    </footer>
+  </div>
+
+  <script src="app.js" type="module"></script>
+</body>
+</html>
