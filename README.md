@@ -15,7 +15,7 @@ Aplikasi ini terdiri dari dua fitur utama, yaitu **Catatan Harian** dan **Ramala
    - Menangani kesalahan jika kota tidak ditemukan atau API gagal merespon.
 
 ## Screenshot Aplikasi
-![Screenshot Aplikasi](./screenshot.png)
+![Screenshot Aplikasi]([./screenshot.png](https://github.com/MUHHakiki/praktikum-2/blob/main/Screenshot%202025-04-13%20221141.png))
 
 *Gambar ini menunjukkan antarmuka aplikasi yang sudah jadi, dengan fitur Catatan Harian di atas dan Ramalan Cuaca di bawah.*
 
