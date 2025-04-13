@@ -1,0 +1,218 @@
+/* Reset default margin dan padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Menetapkan font dan background body */
+body {
+  font-family: 'Creepster', sans-serif;
+  background: linear-gradient(to right, #2c3e50, #34495e);
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+  background-image: url('https://www.transparenttextures.com/patterns/dark-wood-pattern.png'); /* Background texture */
+}
+
+/* Container untuk membungkus semua elemen */
+.container {
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  border: 2px solid #8e44ad; /* Border ungu gelap */
+}
+
+/* Styling untuk header */
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #f39c12;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.header .subheading {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #95a5a6;
+  font-weight: 400;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+/* Styling untuk bagian catatan */
+.catatan {
+  margin-bottom: 50px;
+}
+
+.catatan h2 {
+  font-size: 2rem;
+  color: #e74c3c;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.catatan h2::before {
+  content: "🖤";
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #95a5a6;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecf0f1;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+textarea:focus {
+  border-color: #e74c3c;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.5);
+}
+
+button {
+  background: #e74c3c;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+}
+
+button:hover {
+  background: #c0392b;
+  box-shadow: 0 10px 20px rgba(231, 76, 60, 0.7);
+}
+
+#daftarCatatan p {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, background 0.3s ease-in-out;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#daftarCatatan p:hover {
+  transform: scale(1.05);
+  background: rgba(255, 0, 0, 0.4);
+}
+
+#daftarCatatan button {
+  background: #8e44ad;
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+#daftarCatatan button:hover {
+  background: #9b59b6;
+}
+
+/* Styling untuk bagian cuaca */
+.cuaca {
+  margin-bottom: 40px;
+}
+
+.cuaca h2 {
+  font-size: 2rem;
+  color: #f39c12;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.cuaca h2::before {
+  content: "🌪️";
+  margin-right: 10px;
+  font-size: 2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #95a5a6;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ecf0f1;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+input[type="text"]:focus {
+  border-color: #f39c12;
+  box-shadow: 0 5px 15px rgba(243, 156, 18, 0.5);
+}
+
+#cuaca {
+  font-size: 1.2rem;
+  color: #ecf0f1;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styling */
+.footer {
+  text-align: center;
+  color: #ecf0f1;
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin: 5px;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes flicker {
+  0% {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(231, 76, 60, 0.8), 0 0 10px rgba(231, 76, 60, 0.8), 0 0 15px rgba(231, 76, 60, 0.8);
+  }
+  50% {
+    opacity: 0.6;
+    text-shadow: none;
+  }
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 5px rgba(231, 76, 60, 0.8), 0 0 10px rgba(231, 76, 60, 0.8), 0 0 15px rgba(231, 76, 60, 0.8);
+  }
+}
